@@ -23,7 +23,7 @@ const userSchema = new Schema({
         minlength: [6, 'Password is too short']
     },
     role: {
-        type: String,
+        type: [String],
         required: true,
         default: ['STUDENT'],
     },
